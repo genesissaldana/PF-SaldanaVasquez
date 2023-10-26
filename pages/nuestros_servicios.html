@@ -1,0 +1,125 @@
+<!DOCTYPE html> <!--- esta etiqueta abierta me indica que mi web esta hecha en html 5-->
+<!-- Para guardar cambios: ctrl + s -->
+
+<html lang="español">
+<!-- todo lo que va en el head son configuraciones para el navegador-->
+    <head>
+        <!-- Las meta son etiquetas de configuración-->
+        <meta charset="UTF-8"> <!-- el contenido puede estar en idioma español -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 1 pixel es lo mismo en cualquier dispositivo-->
+        <title>Nuestros Servicios</title> <!-- etiqueta del titulo de la pagina web, aparece en la pestaña-->
+        <link rel="shortcut icon " href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+
+    <!-- En el body va el contenido que ve el usuario, en el viewport -->
+    <body>
+        <header class="header" id="header">
+            <section class="header__section">
+                <a href="../index.html" class="header__section__image">
+                    <img src="../assets/img/llave.png" alt="Logo">
+                </a>
+                <nav class="nav"> <!-- etiqueta emantica de la navegación-->
+                    <ul class="nav__links"> 
+                        <li><a href="../index.html"> Inicio</a></li> 
+                    <li> <a href="./nosotros.html"> Nosotros</a> </li> 
+                        <li> <a href="./propiedades.html"> Propiedades</a> </li>
+                    <li> <a href="#" class="link-active"> Nuestros Servicios </a> </li> 
+                    <li> <a href="./contacto.html"> Contacto </a> </li> 
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <main> 
+            <!-- Servicios -->
+           <section>
+                <div>
+                    <h2> Presentación</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u9TVW_Gq7ks?si=gC2fXpR9J0xIhAqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h2> Servicios</h2>
+                    <h3>Ventas</h3>
+                    <p>Nos enorgullece ofrecer un conjunto completo de servicios diseñados para maximizar el valor de tu propiedad y simplificar el proceso de compra o venta. Nuestros experimentados agentes inmobiliarios trabajan incansablemente para comprender tus necesidades y objetivos, brindándote asesoramiento personalizado y estrategias efectivas. </p>
+                    <h3>Alquileres</h3>
+                    <p>Estamos comprometidos en ayudarte a encontrar la propiedad de alquiler ideal que se adapte a tus necesidades y estilo de vida. Ya sea que busques una casa, un apartamento o un espacio comercial, nuestra amplia cartera de propiedades y nuestro profundo conocimiento del mercado inmobiliario local garantizan que te presentaremos las mejores opciones disponibles.  </p>
+                    <h3>Proyectos</h3>
+                    <p>Confía en nosotros para convertir tus ideas en realidades tangibles y exitosas en el mercado inmobiliario. Estamos aquí para ayudarte a materializar tus proyectos de propiedades de manera eficaz y rentable.</p>
+                </div>
+                <div>
+                    <h2> Testimonios de nuestros clientes</h2>
+                </div>
+            </section>
+
+           <!-- Testimonios -->
+            <section>
+                <div>
+                    <img src="../assets/img/lucia_lopez.png" alt="Logo">
+                    <h3>Lucia Lopez</h3>
+                    <h5>49 años</h5>
+                    <p>"Mi experiencia con LLAVE 3S fue asombrosa. Su equipo profesional me ayudó a encontrar mi hogar perfecto."</p>
+                </div>
+                <div>
+                    <img src="../assets/img/miriam_russo.png" alt="Logo">
+                    <h3>Miriam Russo</h3>
+                    <h5>56 años</h5>
+                    <p>"Gracias al equipo de LLAVE 3S, encontré mi casa de ensueño. Profesionales comprometidos que hicieron que todo fuera fácil y exitoso."</p>
+                </div>
+                <div>
+                    <img src="../assets/img/carina_eyal.png" alt="Logo">
+                    <h3>Carina Eyal</h3>
+                    <h5>31 años</h5>
+                    <p>"La experiencia con [nombre de la empresa inmobiliaria] fue excelente. Vendieron mi propiedad rápidamente y me ayudaron a encontrar otra perfecta."</p>
+                </div>
+            </section>
+
+
+            <!-- Formulario -->
+            <section class="form__section"  >
+                <div class="form__info">
+                    <h2> Te ayudamos con tus consultas</h2>
+                    <form action="" class="form__section__box">
+                       <div><label for=""></label><input type="text" id="Nombre" name="nombre" placeholder="Ingresa tu nombre" required> </div>       
+                       <div><label for=""> </label><input type="text" id="Apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required> </div>
+                       <div><label for=""> </label><input type="text" id="correo" name="correo" placeholder="Ingresa tu correo" required> </div>
+                       <div><label for=""> </label><input type="text" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required> </div> 
+                       <div><label for=""> </label><select name="Tipopropiedad" id="prop" aria-placeholder="Tipo de propiedad"><option value="terreno"> Terrenos </option><option value="casa"> Casas </option> <option value="proyectos"> Proyectos </option></select></div>    
+                       <div><label for=""></label><textarea  id="mensaje" name="mensaje" cols="60" rows="5" placeholder="Ingresa tu mensaje" required> </textarea></div>
+                       
+                       <button type="submit"> Contáctame</button>
+
+                    </form>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <section class="footer__section">
+                <div class="footer__content">
+                    <p><b>LLAVE 3S</b></p>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/llave3sestatesprestige/" target="_blank"><img src="../assets/img/ig.png" alt="rrss"> </a>
+                            <a href="https://www.facebook.com/InmobiliariaLlave3S" target="_blank"><img src="../assets/img/fb.png" alt="rrss"> </a>
+                            <a href="" target="_blank"><img src="../assets/img/wsp.png" alt="rrss"> </a>
+                            <a href="https://www.youtube.com/@llave3sbienesraices77" target="_blank"><img src="../assets/img/youtube.png" alt="rrss"> </a>
+                        </div>
+                    <p> Chimbote - Perú</p>
+                    <nav class="footer__section__list"> 
+                        <ul class="nav__list">
+                            <li> <a href=""> Términos y Condiciones</a></li>
+                            <li> <a href=""> Política de privacidad </a></li>
+                            <li> <a href="./pages/contacto.html"> Contacto </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
+
+<!-- Esto es un comentario -->
+<!-- Soy un comentario
+multi linea -->

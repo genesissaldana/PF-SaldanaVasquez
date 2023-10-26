@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!--- esta etiqueta abierta me indica que mi web esta hecha en html 5-->
+<!-- Para guardar cambios: ctrl + s -->
+
+<html lang="español">
+<!-- todo lo que va en el head son configuraciones para el navegador-->
+    <head>
+        <!-- Las meta son etiquetas de configuración-->
+        <meta charset="UTF-8"> <!-- el contenido puede estar en idioma español -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 1 pixel es lo mismo en cualquier dispositivo-->
+        <title>Contacto</title> <!-- etiqueta del titulo de la pagina web, aparece en la pestaña-->
+        <link rel="shortcut icon " href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+
+    <!-- En el body va el contenido que ve el usuario, en el viewport -->
+    <body>
+        <header class="header" id="header">
+            <section class="header__section">
+            <a href="../index.html" class="header__section__image">
+                <img src="../assets/img/llave.png" alt="Logo">
+            </a>
+            
+            <nav class="nav"> <!-- etiqueta semantica de la navegación -->
+                <ul class="nav__links"> 
+                    <li><a href="../index.html"> Inicio</a></li> 
+                    <li> <a href="./nosotros.html"> Nosotros</a> </li> 
+                    <li> <a href="./propiedades.html"> Propiedades</a> </li>
+                    <li> <a href="./nuestros_servicios.html"> Nuestros Servicios </a> </li> 
+                    <li> <a href="#" class="link-active"> Contacto </a> </li> 
+                </ul>
+            </nav>
+            </section>
+        </header>
+
+        <main> 
+            <!-- Formulario -->
+            <section class="form__section"  >
+                <div class="form__info">
+                    <h2> Te ayudamos con tus consultas</h2>
+                    <form action="" class="form__section__box">
+                    <div><label for=""></label><input type="text" id="Nombre" name="nombre" placeholder="Ingresa tu nombre" required> </div>       
+                    <div><label for=""> </label><input type="text" id="Apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required> </div>
+                    <div><label for=""> </label><input type="text" id="correo" name="correo" placeholder="Ingresa tu correo" required> </div>
+                    <div><label for=""> </label><input type="text" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required> </div> 
+                    <div><label for=""> </label><select name="Tipopropiedad" id="prop" aria-placeholder="Tipo de propiedad"><option value="terreno"> Terrenos </option><option value="casa"> Casas </option> <option value="proyectos"> Proyectos </option></select></div>    
+                    <div><label for=""></label><textarea  id="mensaje" name="mensaje" cols="60" rows="5" placeholder="Ingresa tu mensaje" required> </textarea></div>
+                    
+                    <button type="submit"> Contáctame</button>
+
+                    </form>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <section class="footer__section">
+                <div class="footer__content">
+                    <p><b>LLAVE 3S</b></p>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/llave3sestatesprestige/" target="_blank"><img src="../assets/img/ig.png" alt="rrss"> </a>
+                            <a href="https://www.facebook.com/InmobiliariaLlave3S" target="_blank"><img src="../assets/img/fb.png" alt="rrss"> </a>
+                            <a href="" target="_blank"><img src="../assets/img/wsp.png" alt="rrss"> </a>
+                            <a href="https://www.youtube.com/@llave3sbienesraices77" target="_blank"><img src="../assets/img/youtube.png" alt="rrss"> </a>
+                        </div>
+                    <p> Chimbote - Perú</p>
+                    <nav class="footer__section__list"> 
+                        <ul class="nav__list">
+                            <li> <a href=""> Términos y Condiciones</a></li>
+                            <li> <a href=""> Política de privacidad </a></li>
+                            <li> <a href="./pages/contacto.html"> Contacto </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
+
+<!-- Esto es un comentario -->
+<!-- Soy un comentario
+multi linea -->
