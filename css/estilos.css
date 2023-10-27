@@ -16,9 +16,8 @@
 }
 
 body {
-    background-color: var(--color-gris);
+    background-color: var(--color-gris)!important;
     font-family: 'roboto' , sans-serif;
-    
 }
 
 h1{
@@ -27,8 +26,8 @@ h1{
 }
 
 .header {
-    display: flex;
-    justify-content: center;
+    /*--display: flex;
+    justify-content: center;**/
     padding: 24px 0;/*-- manejarlo como forma horaria*/
    
 }
@@ -59,7 +58,6 @@ h1{
 }
 
 .nav .nav__links li{
-    display: inline-block; /*Posicionar un elemento al costado del otro*/
     padding-left: 12px;
 }
 
@@ -71,8 +69,8 @@ h1{
     text-decoration: underline;
 }
 
-.header__section .nav .nav__links li a:hover {
-   text-decoration: underline;
+.nav__links li a:hover {
+   text-decoration: underline!important;
 }
 
 /* Contenido principal */
@@ -330,33 +328,29 @@ h1{
 /* Footer */
 .footer__section{
     height: calc(100vh - 120%);
-    margin: 4rem auto 0; 
     background-color: var(--color-black);
-    color: var(--color-white);
-    text-align: center;
-    
-}
-.footer .footer__section .footer__section__list{
-    display: flex;
-    justify-content: center;
-}
-.footer__section .footer__section__list .nav__list{ /*Links en forma horizontal*/
-    display: flex;
-    column-gap: 1.5rem;
-}
-.footer__section .footer__content .footer__section__list .nav__list li a {
     color: var(--color-white);
 }
 
-.footer__section .footer__content .footer__section__list .nav__list li:hover {
+.nav__list{ /*Links en forma horizontal*/
+    column-gap: 1.5rem;
+}
+
+.nav__list li a {
+    color: var(--color-white);
+}
+
+.nav__list li:hover {
     text-decoration: underline;
+}
+
+.footer__home {
+    width: 100%!important;
 }
 
 .footer .footer__section .footer__content{
     padding: 2rem 1rem;
     line-height: 32px; /*Espaciado de un parrafo*/
-    justify-content: center;
-  
 }
 .footer__content .icons a{
   padding-left: 12px;
