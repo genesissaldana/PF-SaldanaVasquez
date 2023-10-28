@@ -18,7 +18,7 @@
     <body>
         <!-- Header-->
         <header class="header container d-flex justify-content-center" id="header">
-            <section class="header__section">
+            <section class="header__section d-flex justify-content-between">
                 <a href="index.html" class="header__section__image" >
                     <img src="./assets/img/llave.png" alt="Logo" >
                 </a>
@@ -41,54 +41,59 @@
         <main > 
         <!-- Contenido principal -->
             <section class="principal">
-                <div class="contenido">
-                    <div class="tituloBox">
-                        <h1> Aquí es donde los sueños se construyen </h1><!-- Título principal -->
-                        <p>Descubre tu hogar perfecto con nosotros. Nuestra plataforma inmobiliaria te ofrece la llave hacia la casa de tus sueños.</p>
-                        <a href="./pages/contacto.html">Quiero un asesor</a>
+                <div class="contenido ps-5 d-flex justify-content-between">
+                    <div class="tituloBox d-flex justify-content-center flex-column">
+                        <h1 class="mb-0 fw-bold"> Aquí es donde los sueños se construyen </h1><!-- Título principal -->
+                        <p class="mt-3 mb-3">Descubre tu hogar perfecto con nosotros. Nuestra plataforma inmobiliaria te ofrece la llave hacia la casa de tus sueños.</p>
+                        <a class="text-decoration-none mt-0" href="./pages/contacto.html">Quiero un asesor</a>
                     </div>
-                    <div class="imgBox">
-                         <img src="./assets/img/casa.png" alt="fondo"/> 
+                    <div class="imgBox d-flex">
+                         <img src="./assets/img/casacopy.png" alt="fondo"/> 
                     </div>
                 </div>
             </section>
 
             <!-- Lo que podemos hacer por ti -->
-            <section class="info"> 
+            <section class="text-center pt-5 pb-5"> 
                 <div class="info__container">
-                    <h2>Lo que podemos hacer por ti</h2><!-- Título principal -->
-                    <div class="text__info">
-                        <div class="icon__container"><!-- primer item -->
-                            <img src="./assets/img/focus.svg" alt="icon"> 
-                            <h3>Compra tu propiedad hoy mismo</h3>
-                            <p>No pierdas más tiempo, descubre las mejores opciones disponibles y adquiere tu propiedad hoy mismo con nosotros.</p>
-                        </div>
-                        
-                        <div class="icon__container"><!-- segundo item -->
-                            <img src="./assets/img/guia.svg" alt="icon"> 
-                            <h3>Asesoramiento de inicio a fin</h3>
-                            <p>Nuestro asesoramiento completo garantiza éxito desde el principio hasta el final.</p>
-                        </div>
+                    <h2 class="mb-4 fw-bold">Lo que podemos hacer por ti</h2><!-- Título principal -->
+                    <div class="container mt-2">
+                        <div class="row d-flex justify-content-center">
+                            <!-- primer item -->
+                            <div class="icon__container col-md-4 col-sm-6 col-12">
+                                <img src="./assets/img/focus.svg" alt="icon"> 
+                                <h3>Compra tu propiedad hoy mismo</h3>
+                                <p>No pierdas más tiempo, descubre las mejores opciones disponibles y adquiere tu propiedad hoy mismo con nosotros.</p>
+                            </div>
 
-                        <div class="icon__container"><!-- tercero item -->
-                            <img src="./assets/img/inmueble.svg" alt="icon"> 
-                            <h3>Vender o alquilar tu inmueble</h3>
-                            <p>Tomamos el estrés de vender o alquilar tu propiedad. Déjanos hacerlo por ti con éxito garantizado.</p>
+                            <!-- segundo item -->
+                            <div class="icon__container col-md-4 col-sm-6 col-12">
+                                <img src="./assets/img/guia.svg" alt="icon"> 
+                                <h3>Asesoramiento de inicio a fin</h3>
+                                <p>Nuestro asesoramiento completo garantiza éxito desde el principio hasta el final.</p>
+                            </div>
+
+                            <!-- tercero item -->
+                            <div class="icon__container col-md-4 col-sm-6 col-12">
+                                <img src="./assets/img/inmueble.svg" alt="icon"> 
+                                <h3>Vender o alquilar tu inmueble</h3>
+                                <p>Tomamos el estrés de vender o alquilar tu propiedad. Déjanos hacerlo por ti con éxito garantizado.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section> 
 
             <!-- Últimos proyectos-->
-            <section class="video">
-                <div class="video__container">
-                    <h2>Últimos proyectos</h2><!-- Título principal -->
-                    <div class="video__texto">
-                        <p> Explora emocionantes oportunidades en nuestros últimos proyectos inmobiliarios disponibles ahora mismo.</p>
-                        <a href="./pages/contacto.html">Quiero un asesor</a>
+            <section class="video p-5">
+                <div class="video__container text-center d-flex flex-column">
+                    <h2 class="fw-bold">Últimos proyectos</h2><!-- Título principal -->
+                    <div class="video__texto d-flex flex-column align-items-center">
+                        <p class="mt-2 mb-2"> Explora emocionantes oportunidades en nuestros últimos proyectos inmobiliarios disponibles ahora mismo.</p>
+                        <a class="text-decoration-none" href="./pages/contacto.html">Quiero un asesor</a>
                     </div>
 
-                    <div class="video__link">
+                    <div class="video__link mt-4">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/2xQWBHFtVkw?si=QG-M7n5I1euct8g-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
                     </div>
                 </div>
@@ -96,26 +101,52 @@
                     
             <!-- Formulario -->
             <section class="form__section"  >
-                <div class="form__info">
-                    <h2> Te ayudamos con tus consultas</h2>
-                    <form action="" class="form__section__box">
-                       <div><label for=""></label><input type="text" id="Nombre" name="nombre" placeholder="Ingresa tu nombre" required> </div>       
-                       <div><label for=""> </label><input type="text" id="Apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required> </div>
-                       <div><label for=""> </label><input type="text" id="correo" name="correo" placeholder="Ingresa tu correo" required> </div>
-                       <div><label for=""> </label><input type="text" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required> </div> 
-                       <div><label for=""> </label><select name="Tipopropiedad" id="prop" aria-placeholder="Tipo de propiedad"><option value="terreno"> Terrenos </option><option value="casa"> Casas </option> <option value="proyectos"> Proyectos </option></select></div>    
-                       <div><label for=""></label><textarea  id="mensaje" name="mensaje" cols="60" rows="5" placeholder="Ingresa tu mensaje" required> </textarea></div>
-                       
-                       <button type="submit"> Contáctame</button>
-                    </form>
+                <div class="form__info container text-center">
+                    <h2 class="fw-bold"> Te ayudamos con tus consultas</h2>
+
+                        <form action="" class="form__section__box justify-content-center">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-12">
+                                    <label for=""></label>
+                                    <input type="text" id="Nombre" name="nombre" placeholder="Ingresa tu nombre" required> 
+                                </div>       
+                                <div class="col-md-12">
+                                    <label for=""> </label>
+                                    <input type="text" id="Apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required> 
+                                </div>
+                                <div class="col-md-12">
+                                    <label for=""> </label>
+                                    <input type="text" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for=""> </label>
+                                    <input type="text" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required> 
+                                </div> 
+                                <div class="col-md-12">
+                                    <label for=""> </label>
+                                    <select name="Tipopropiedad" id="prop" aria-placeholder="Tipo de propiedad">
+                                        <option value="terreno"> Terrenos </option>
+                                        <option value="casa"> Casas </option> 
+                                        <option value="proyectos"> Proyectos </option>
+                                    </select>
+                                </div>    
+                                <div class="col-md-12">
+                                    <label for=""></label>
+                                    <textarea  id="mensaje" name="mensaje" cols="60" rows="5" placeholder="Ingresa tu mensaje" required> </textarea>
+                                </div>
+                        
+                                <button type="submit"> Contáctame</button>
+                            </div>
+                        </form>
+
                 </div>
             </section>
         </main>
 
         <!-- Footer -->
-        <footer class="container-xxl me-0 pe-0 ms-0 ps-0" id="footer">
+        <footer class="container-fluid d-flex justify-content-center ps-0 pe-0" id="footer">
             <section class="footer__section text-center pt-4 pb-2">
-                <div class="footer__content justify-content-center ">
+                <div class="footer__content justify-content-center">
                     <p><b>LLAVE 3S</b></p>
                         <div class="icons">
                             <a class="text-decoration-none" href="https://www.instagram.com/llave3sestatesprestige/" target="_blank"><img src="./assets/img/ig.png" alt="rrss"> </a>
@@ -125,7 +156,7 @@
                         </div>
                     <p class="pt-1"> Chimbote - Perú</p>
                     <nav class="d-flex justify-content-center"> 
-                        <ul class="nav__list d-flex">
+                        <ul class="nav__list d-flex ps-0">
                             <li> <a class="text-decoration-none" href=""> Términos y Condiciones</a></li>
                             <li> <a class="text-decoration-none" href=""> Política de privacidad </a></li>
                             <li> <a class="text-decoration-none" href="./pages/contacto.html"> Contacto </a></li>
