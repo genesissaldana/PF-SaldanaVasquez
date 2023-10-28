@@ -26,24 +26,13 @@ h1{
 }
 
 .header {
-    /*--display: flex;
-    justify-content: center;**/
-    padding: 24px 0;/*-- manejarlo como forma horaria*/
-   
-}
-.header__section  {
-    width: var(--size-container);
-    font-size: 0.9;
-    font-family: 'roboto', sans-serif;
+    padding: 24px 0;
+    width: var(--size-container)!important;
 }
 
 /* Logo cabecera */
-.header__section .header__section__image {
-    width: 8%;
-}
-
-.header__section .header__section__image img{
-    width: 100%;
+.header__section__image{
+    width: 10%;
 }
 
 /* Cabecera links */
@@ -51,15 +40,11 @@ h1{
     font-size: 16px;
 }
 
-.nav .nav__links li{
-    padding-left: 12px;
-}
-
-.nav .nav__links li a{
+.nav__links li a{
     color: var(--color-black);
 }
 
-.nav .nav__links .link-active {
+.nav__links .link-active {
     text-decoration: underline;
 }
 
@@ -75,12 +60,8 @@ h1{
     border-radius: 40px;
     background-color: var(--color-white);
     box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.10);
+    padding-left: 3rem;
 }
-
- /*.principal .contenido .tituloBox, .principal .contenido .imgBox {
-    display: inline-block;
-    position: absolute;
-}REVISAR LOS 2 X 1 como este ejemplo de arriba*/
 
 .principal .contenido .tituloBox{
     width: 46%;
@@ -129,6 +110,122 @@ h1{
     width: 100%;
 }
 
+
+
+
+/*================= MOBILE VERSION =================*/
+
+@media (max-width: 768px) {
+
+    .principal, .info, .video , .form__section {
+        margin: 3rem 1.5rem!important;
+    }
+
+    /* HEADER */
+    .header {
+        height: 7rem;
+        padding: 24px 0!important;
+        width: 100%!important;
+    }
+
+    nav {
+        background-color: var(--color-gris);
+    }
+
+    .header__section__image {
+        width: 20%;
+    }
+
+    .header__nav {
+        flex-direction: row-reverse!important;
+    }    
+
+    .header__section .collapse.navbar-collapse {
+        display: none; /* Ocultar el menú de navegación por defecto */
+    }
+
+    .header ul li:hover {
+        background-color: var(--color-black);
+    }
+
+    .header li:hover a{
+        color: var(--color-white);
+    }
+
+    
+    /* PRINCIPAL */
+    .imgBox {
+        display: none;
+    }
+
+    .contenido {
+        width: 100%!important;
+        height: auto!important;
+        padding: 2rem!important;
+    }
+
+    .contenido .tituloBox {
+        width: 100%!important;
+        text-align: center;
+    }
+
+    .contenido .tituloBox a {
+        width: 100%;
+    }
+
+
+    /* LO QUE HACEMOS POR TI */
+    .info__container, .info__container .icon__container {
+        width: 100%!important;
+    }
+
+    .container .row {
+        row-gap: 1rem;
+    }
+
+
+    /* ULTRIMOS PROYECTOS */
+    .video__container {
+        width: 100%!important;
+        padding: 2rem;
+    }
+
+    .video__texto a {
+        width: 100%;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: 100%;
+    } 
+
+    /* FORMULARIO */
+    .form__section .form__info {
+        width: 100%!important;
+        padding: 2rem;
+    }
+
+    .form__section label {
+        display: none;
+    }
+
+    .form__section input,  .form__section select,  .form__section textarea, .form__section button {
+        width: 100%!important;
+    }
+
+    /* FOOTER */ 
+    .footer__section nav {
+        background-color: var(--color-black);
+    }
+
+    .footer__section ul {
+        row-gap: 1rem;
+    }
+}
+
+
+
+
 /* Lo que podemos hacer por ti */
 
 .info__container {
@@ -148,13 +245,16 @@ h1{
 }
 
 /* Contenedores por bloque */
+.info__container .container .row {
+    column-gap: 1rem;
+}
+
 .info__container .icon__container{
     background: var(--color-white);
     border-radius: 16px;
     padding: 2rem 1rem;
     box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.10);
     cursor: pointer;
-    margin: 1rem;
     width: 30%;
 }
 
@@ -183,16 +283,14 @@ h1{
 .video{
     height: calc(100vh - 120%);
     position: relative;
-    width: var(--size-container);
-    margin: 0 auto; /*Centra mi contenido*/
-    border-radius: 40px;
-    background-color: var(--color-white);
-    box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.10);
 }
 
 .video__container {
     background: var(--color-white);
+    width: var(--size-container);
+    margin: 0 auto; /*Centra mi contenido*/
     border-radius: 40px;
+    box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.10);
 }
 
 .video .video__texto{
@@ -232,20 +330,18 @@ h1{
 .form__section {
     height: calc(100vh - 120%);
     position: relative;
-    padding: 3rem;
-    width: var(--size-container);
-    margin: 4rem auto; 
-    border-radius: 40px;
-    background-color: var(--color-white);
-    box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.10);
     text-align: left;
 }
 
 .form__section .form__info{
     background: var(--color-white);
+    width: var(--size-container);
     border-radius: 40px;
+    box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.10);
+    margin: 4rem auto; 
     line-height: 2rem;
 }
+
 .form__section input {
     resize: none;
     background-color: var(--color-white);

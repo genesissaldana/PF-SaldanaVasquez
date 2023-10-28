@@ -15,22 +15,24 @@
 
     <!-- En el body va el contenido que ve el usuario, en el viewport -->
     <body>
-        <header class="header container d-flex justify-content-center" id="header">
-            <section class="header__section d-flex justify-content-between">
-                <a href="../index.html" class="header__section__image">
-                    <img src="../assets/img/llave.png" alt="Logo">d
+        <header class="header container">
+            <nav class="navbar navbar-expand-md navbar-light header__nav">
+                <a href="../index.html" class="navbar-brand header__section__image me-0">
+                    <img src="../assets/img/llave.png" alt="Logo" class="img-fluid">
                 </a>
-                
-                <nav class="nav"> <!-- etiqueta emantica de la navegación-->
-                    <ul class="nav__links d-flex">
-                        <li> <a class="text-decoration-none" href="../index.html"> Inicio</a></li> 
-                        <li> <a class="text-decoration-none" href="./nosotros.html" > Nosotros</a> </li> 
-                        <li> <a class="text-decoration-none" href="./propiedades.html"> Propiedades</a> </li>
-                        <li> <a class="link-active" href="#"> Nuestros Servicios </a> </li> 
-                        <li> <a class="text-decoration-none" href="./contacto.html"> Contacto </a> </li> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ml-auto nav__links">
+                        <li class="nav-item"> <a class="text-decoration-none nav-link " href="../index.html"> Inicio</a></li>
+                        <li class="nav-item"> <a class="text-decoration-none nav-link " href="./nosotros.html"> Nosotros</a> </li>
+                        <li class="nav-item"> <a class="text-decoration-none nav-link " href="./propiedades.html"> Propiedades</a> </li>
+                        <li class="nav-item"> <a class="link-active nav-link " href="#"> Nuestros servicios </a> </li>
+                        <li class="nav-item"> <a class="text-decoration-none nav-link " href="./contacto.html">Contacto</a> </li>
                     </ul>
-                </nav>
-            </section>
+                </div>
+            </nav>
         </header>
 
         <main> 
@@ -110,7 +112,7 @@
                         </div>
                     <p class="pt-1"> Chimbote - Perú</p>
                     <nav class="d-flex justify-content-center"> 
-                        <ul class="nav__list d-flex ps-0">
+                        <ul class="nav__list d-flex ps-0 list-group list-group-horizontal-sm list-group-horizontal-md">
                             <li> <a class="text-decoration-none" href=""> Términos y Condiciones</a></li>
                             <li> <a class="text-decoration-none" href=""> Política de privacidad </a></li>
                             <li> <a class="text-decoration-none" href="./pages/contacto.html"> Contacto </a></li>
@@ -119,6 +121,9 @@
                 </div>
             </section>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
 
