@@ -1,0 +1,23 @@
+// Este archivo hace la importación de las demás partes de los estilos del proyecto
+
+//Base
+@import "./base/reset.scss";
+
+//Components
+@import "./components//buttons";
+@import "./components/whasapp";
+
+//Layout
+@import "./layout/header";
+@import "./layout/footer";
+
+//Utilities
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+//Views
+@import "./views/home";
+@import "./views/contacto";
+@import "./views/nosotros";
+@import "./views/nuestros-servicios";
+@import "./views/propiedades";
