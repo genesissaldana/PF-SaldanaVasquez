@@ -1,0 +1,35 @@
+@import "../utilities/variables";
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $color-wsp;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &__link {
+        img {
+            vertical-align: middle;
+            width: 28px;
+            height: 28;
+            margin-left: 2px;
+        }
+    }
+}
+
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 768px) {
+    
+    .whatsapp {
+        bottom: 12px;
+        right: 12px;
+    }
+
+}

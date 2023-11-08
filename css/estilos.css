@@ -1,28 +1,5 @@
-*{
-    margin: 0; 
-    padding: 0;
-    border: 0;
-    text-decoration: none; /* Sirve para quitar subrayados a la etiqueta*/
-    list-style: none; /* Sirve para quitar viñetas de las listas */
-    box-sizing: border-box;
-}
-
-:root{ /* Sirve para agregar variables globales en el archivo*/
-    --color-black:#000; /*-- es para nombrar la var*/
-    --color-white:#fff;
-    --color-gris: #EFEEE9;
-    
-    --size-container: 1140px;
-}
-
 body {
     background-color: var(--color-gris)!important;
-    font-family: 'roboto' , sans-serif!important;
-}
-
-h1{
-    font-size: 32px;
-    color: var(--color-black);
 }
 
 .header {
