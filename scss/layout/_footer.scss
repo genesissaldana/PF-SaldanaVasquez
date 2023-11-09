@@ -1,0 +1,55 @@
+@import "../utilities/variables";
+
+.footer {
+    background-color:  map-get($color-main, primary);
+    display: flex;
+    padding: 2rem 0;
+
+    &__section {
+        max-width: $container-width-desktop;
+        margin: 0 auto;
+        color: map-get($color-main, secondary);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+
+        &__title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .social {
+            display: flex;
+            column-gap: 1.8rem;
+
+            a {
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        &__address {
+            font-size: 16px;
+        }
+
+        &__links {
+            .footer__section__link {
+                display: flex;
+                column-gap: 27px;
+                
+                a{
+                    color: map-get($color-main, secondary);
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+}

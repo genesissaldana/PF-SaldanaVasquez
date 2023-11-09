@@ -1,0 +1,140 @@
+@import "../utilities/variables";
+
+// Donde los sueños se construyen
+.build {
+    border-radius: 40px;
+    padding-top: 6rem;
+
+    &__section {
+        position: relative;
+        height: calc(100vh - 6rem);
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        border-radius: 40px;
+        padding: 72px;
+        background-color: map-get($color-main , secondary );
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+
+        &--left {
+            @include flex-column;
+            justify-content: center;
+            row-gap: 1rem;
+            width: 562px;
+
+            .build__section--desc {
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .build__section--button {
+                margin-top: 1rem;
+            }
+        }
+
+        &--right {
+
+            img {
+                width: 40%;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                border-end-end-radius: 40px;
+            }
+
+        }
+    }
+    
+}
+
+// Lo que podemos hacer por ti
+.info {
+    margin-top: 60px;
+
+    &__section {
+        text-align: center;
+
+        &__cards {
+            display: flex;
+            column-gap: 1.5rem;
+            margin-top: 2.25rem;
+
+            .info__section--card {
+                background-color: map-get($color-main, secondary);
+                width: 363px;
+                border-radius: 1rem;
+                padding: 1.5rem;
+                @include flex-column;
+                row-gap: 20px;
+                align-items: center;
+                box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+
+                img {
+                    width: 48px;
+                }
+            }
+        }
+    }
+}
+
+// Últimos proyectos 
+.video {
+    @include detail-section;
+
+    &__section {
+        text-align: center;
+        @include flex-column;
+        align-items: center;
+        row-gap: 18px;
+
+        &__up {
+            width: 562px;
+            display: flex;
+            flex-direction: column;
+            
+            row-gap: 1rem;
+
+            .video__section--button {
+                margin: 1rem 0;
+            }
+        }
+    }
+}
+
+// Formulario
+.form {
+    @include detail-section;
+    margin-bottom: 2rem;
+
+    &__section {
+        text-align: center;
+
+        &__container {
+            margin-top: 1.5rem;
+
+            input {
+                width: 555px;
+                height: 3rem;
+                @include form-section;
+            }
+
+            select {
+                width: 555px;
+                height: 3rem;
+                @include form-section;
+            }
+
+            textarea {
+                width: 555px;
+                height: 6.75rem;
+                @include form-section;
+                resize: none;
+            }
+
+            .form__content {
+                @include flex-column;
+                row-gap: 1rem;
+            }
+        }
+    }
+
+}
