@@ -1,0 +1,41 @@
+@import "../utilities/variables";
+
+// Nuestro principal objetivo
+.goal {
+    @include small-detail-section;
+
+    &__section {
+        @include flex-column;
+        align-items: center;
+        text-align: center;
+        row-gap: 1.25rem;
+
+        img {
+            width: 48px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+// Nuestro equipo de trabajo
+.team {
+    @include small-detail-section;
+
+    &__section {
+        @include flex-column;
+        align-items: center;
+        text-align: center;
+        row-gap: 1.25rem;
+
+        img {
+            width: 48px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}

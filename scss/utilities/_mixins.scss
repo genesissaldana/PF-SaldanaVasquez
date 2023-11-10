@@ -11,6 +11,14 @@
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
+@mixin small-detail-section {
+    margin-top: 60px;
+    background-color: map-get($color-main , secondary);
+    border-radius: 40px;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+}
+
 @mixin form-section {
     background-color: map-get($color-main, secondary);
     border: 1px solid map-get($color-main, primary);

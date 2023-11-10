@@ -1,0 +1,54 @@
+@import "../utilities/variables";
+
+.testimonial {
+    margin-top: 60px;
+    position: relative;
+
+    &__title {
+        text-align: center;
+    }
+    
+    &__section {
+        background-color: map-get($color-main , secondary);
+        border-radius: 40px;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        margin-top: 2.25rem;
+
+        &--img {
+            img {
+                width: 374px;
+                height: 100%;
+                border-top-left-radius: 40px;
+                border-bottom-left-radius: 40px;
+            }
+        }
+
+        &--content {
+            padding: 46px 90px 46px 46px;
+
+            .testimonial--age {
+                margin-top: 10px;
+                font-size: 18px;
+            }
+
+            .testimonial--desc {
+                margin-top: 38px;
+                font-size: 18px;
+                line-height: 32px;
+            }
+
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        right: -38px;
+        top: 50%;
+        margin: auto;
+
+        img {
+            width: 76px;
+        }
+    }
+}

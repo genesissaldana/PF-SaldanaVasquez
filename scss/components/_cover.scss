@@ -1,0 +1,34 @@
+@import "../utilities/variables";
+
+.cover {
+    border-radius: 40px;
+    padding-top: 6rem;
+    position: relative;
+
+    &__section {
+        position: relative;
+        height: calc(100vh - 6rem);
+        border-radius: 40px;
+        background-color: map-get($color-main , secondary );
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 40px;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        left: 0;
+        bottom: 25%;
+        right: 0;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            color: map-get($color-main, secondary );
+        }
+    }
+}

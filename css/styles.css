@@ -58,6 +58,35 @@ h4 {
   color: #000;
 }
 
+.cover {
+  border-radius: 40px;
+  padding-top: 6rem;
+  position: relative;
+}
+.cover__section {
+  position: relative;
+  height: calc(100vh - 6rem);
+  border-radius: 40px;
+  background-color: #FFF;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.cover__section img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+.cover__title {
+  position: absolute;
+  left: 0;
+  bottom: 25%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+.cover__title h1 {
+  color: #FFF;
+}
+
 .whatsapp {
   position: fixed;
   bottom: 12px;
@@ -298,6 +327,90 @@ h4 {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+}
+
+.goal {
+  margin-top: 60px;
+  background-color: #FFF;
+  border-radius: 40px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+}
+.goal__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 1.25rem;
+}
+.goal__section img {
+  width: 48px;
+}
+.goal__section p {
+  font-size: 18px;
+}
+
+.team {
+  margin-top: 60px;
+  background-color: #FFF;
+  border-radius: 40px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+}
+.team__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 1.25rem;
+}
+.team__section img {
+  width: 48px;
+}
+.team__section p {
+  font-size: 18px;
+}
+
+.testimonial {
+  margin-top: 60px;
+  position: relative;
+}
+.testimonial__title {
+  text-align: center;
+}
+.testimonial__section {
+  background-color: #FFF;
+  border-radius: 40px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  margin-top: 2.25rem;
+}
+.testimonial__section--img img {
+  width: 374px;
+  height: 100%;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.testimonial__section--content {
+  padding: 46px 90px 46px 46px;
+}
+.testimonial__section--content .testimonial--age {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.testimonial__section--content .testimonial--desc {
+  margin-top: 38px;
+  font-size: 18px;
+  line-height: 32px;
+}
+.testimonial__arrow {
+  position: absolute;
+  right: -38px;
+  top: 50%;
+  margin: auto;
+}
+.testimonial__arrow img {
+  width: 76px;
 }
 
 /*# sourceMappingURL=styles.css.map */
