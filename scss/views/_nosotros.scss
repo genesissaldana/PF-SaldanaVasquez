@@ -39,3 +39,18 @@
         }
     }
 }
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 768px) {
+
+    .goal {
+        padding: 2rem;
+        margin-top: 40px;
+    }
+
+    .team {
+        margin-top: 40px;
+        padding: 2rem;
+    }
+
+}

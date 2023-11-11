@@ -2,7 +2,7 @@
 
 .cover {
     border-radius: 40px;
-    padding-top: 6rem;
+    padding-top: 7rem;
     position: relative;
 
     &__section {
@@ -31,4 +31,23 @@
             color: map-get($color-main, secondary );
         }
     }
+}
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 768px) {
+
+    .cover {
+
+        &__section {
+            height: 20rem;
+            padding: 0;
+            display: flex;
+        }
+    
+        &__title {
+            bottom: 20%;
+            text-align: center;
+        }
+    }
+
 }

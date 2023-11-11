@@ -48,3 +48,42 @@
     }
 
 }
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 768px) {
+
+    .available {
+    
+        &__title {
+
+        }
+    
+        &__section {
+            row-gap: 1rem;
+        
+            &__container {
+                flex-direction: column;
+                margin-top: 1.5rem;
+    
+                .available__section--img {
+                    img {
+                        width: 100%;
+                        border-bottom-left-radius: 0px;
+                        border-top-right-radius: 40px;
+                    }
+                }
+    
+                .available__section--content {
+                    padding: 28px 40px 0;
+    
+                    .available--btn {
+                        margin: 1rem 0 3rem;
+                    }
+                }
+                    
+            }
+        }
+    
+    }
+
+}
