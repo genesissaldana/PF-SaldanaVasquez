@@ -53,3 +53,24 @@
     }
 
 }
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 768px) {
+
+    .footer {
+
+        &__section {
+
+            &__links {
+                .footer__section__link {
+                    display: flex;
+                    flex-direction: column;
+
+                }
+            }
+
+        }
+
+    }
+
+}

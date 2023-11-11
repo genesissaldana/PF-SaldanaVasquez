@@ -90,7 +90,6 @@
             width: 562px;
             display: flex;
             flex-direction: column;
-            
             row-gap: 1rem;
 
             .video__section--button {
@@ -135,6 +134,123 @@
                 row-gap: 1rem;
             }
         }
+    }
+
+}
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 768px) {
+
+    // Donde los sueños se construyen
+    .build {
+        border-radius: 40px;
+        padding-top: 6rem;
+
+        &__section {
+            height: auto;
+            padding: 2rem;
+            display: flex;
+
+
+            &--left {
+                width: 100%;
+
+                .build__section--desc {
+
+                }
+
+                .build__section--button {
+                    margin: 1rem 0;
+                }
+            }
+
+            &--right {
+                display: none;
+            }
+        }
+        
+    }
+
+    // Lo que podemos hacer por ti
+    .info {
+        margin-top: 30px;
+
+        &__section {
+            text-align: center;
+
+            &__cards {
+            @include flex-column;
+
+                .info__section--card {
+
+
+                    img {
+
+                    }
+                }
+            }
+        }
+    }
+
+    .video {
+
+    
+        &__section {
+
+    
+            &__up {
+
+    
+                .video__section--button {
+
+                }
+            }
+
+            &__down {
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    // Formulario
+    .form {
+
+
+        &__section {
+
+
+            &__container {
+
+
+                input {
+                    width: 100%;
+                    height: 2.5rem;
+
+                }
+
+                select {
+                    width: 100%;
+                    height: 2.5rem;
+                    @include form-section;
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 5.75rem;
+                    @include form-section;
+                    resize: none;
+                }
+
+                .form__content {
+                    @include flex-column;
+                    row-gap: 1rem;
+                }
+            }
+        }
+
     }
 
 }
