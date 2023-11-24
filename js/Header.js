@@ -10,3 +10,8 @@ const mainMenuElement = document.getElementById('main-menu');
 toggleMenuElement.addEventListener('click', () => {
     mainMenuElement.classList.toggle('main-menu--show')
 })
+
+//Página 404
+if (document.title === "Página 404") {
+    window.location.replace("../pages/pagina_404.html");
+}
